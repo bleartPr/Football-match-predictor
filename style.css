@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content, #simulate-button-container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 20px;
+}
+#simulate-button-container {
+    border-radius: 0 0 20px 20px;
+    padding: 0 50px 20px 50px;
+}
+
+.scorebox-margins {
+    margin: 10px;
+}
+
+select {
+    appearance: none;
+    padding: 7px 40px 7px 12px;
+    border: 1px solid #E8EAED;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 1px 3px -2px #9098A9;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+#simulate-button {
+  background-color: #FFFFFF;
+  border: 1px solid rgb(209,213,219);
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #111827;
+  line-height: 1.25rem;
+  padding: .75rem 1rem;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+#simulate-button:hover {
+  background-color: rgb(249,250,251);
+}
+#simulate-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+#simulate-button:focus-visible {
+  box-shadow: none;
+}
+#simulate-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#title {
+  margin: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  
+  #main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #simulate-button-container {
+    border-radius: 0 0 20px 20px;
+    padding: 10px;
+  }
+}
